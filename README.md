@@ -27,3 +27,8 @@ $ python nba_chatbot.py
 ```
 stats.nba.com/stats/scoreboard/?GameDate=02/14/2015&LeagueID=00&DayOffset=0
 ```
+### To-Do:
+[ ]. Intergrate `nltk` or similar NL API.
+[ ]. Integrate `tflearn` or similar reinforced learning API.
+[ ]. Setup database querying system or use `nba.py` API.
+[ ]. Email professor about what we need to accomplish during the week (starting this upcoming 12/01.)
