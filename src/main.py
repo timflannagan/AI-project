@@ -7,6 +7,7 @@ import numpy as np
 import random
 import string
 import io
+import nba_py
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -16,7 +17,7 @@ def download_nltk_pkgs():
     nltk.download('wordnet') # first-time use only
 
 if __name__ == '__main__':
-    f = io.open('src/chatbot.txt', mode = 'r', errors = 'ignore', encoding = 'utf-8')
+    f = io.open('data/chatbot.txt', mode = 'r', errors = 'ignore', encoding = 'utf-8')
     raw = f.read()
     raw = raw.lower()
 
