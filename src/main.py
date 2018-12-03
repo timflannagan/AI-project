@@ -101,3 +101,5 @@ if __name__ == '__main__':
                         print("NBA Chatbot: Did you mean 'who is {}'".format(user_response))
                     else:
                         print("NBA Chatbot: I wasn't able to find any information on the question '{}'".format(user_response))
+            else:
+                print(random.choice(FAIL_RESPONSES))
