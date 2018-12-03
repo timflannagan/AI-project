@@ -9,7 +9,9 @@ import string
 import io
 import nba_py
 import random
+import wikipedia
 
+# from nltk.corpus import brown
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -17,7 +19,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 GREETING_INPUTS = ("hello", "hi", "greetings", "sup", "what's up","hey",)
 GREETING_RESPONSES = ["hi", "hey", "*nods*", "hi there", "hello", "I am glad! You are talking to me"]
 FAIL_RESPONSES = ["I am sorry! I don't understand you.", "I wasn't able to understand that last question."]
-END_INPUTS = ['bye', 'exit', 'leave']
+END_INPUTS = ['bye', 'exit', 'leave', 'quit']
+WIKIPEDIA_QUERIES = ['whois', 'who is', 'who was', 'who are']
 
 '''Function declarations'''
 def lem_tokens(tokens):
@@ -60,6 +63,9 @@ def response(user_response, debug = False):
 def chatbot_introduction():
     print('This is the NBA Chatbot! Enter your question below: ')
 
+def chatbot_end_response():
+    print('Bye for now!')
+
 def read_chatbot_data(data_dir, data_name, download_pkg = False):
     f = io.open(data_dir + '/' + data_name, mode = 'r', errors = 'ignore', encoding = 'utf-8')
     raw = f.read()
@@ -73,42 +79,25 @@ def read_chatbot_data(data_dir, data_name, download_pkg = False):
 
 if __name__ == '__main__':
     '''Driver declaration'''
-    raw = read_chatbot_data('data', 'chatbot.txt')
-    sent_tokens = nltk.sent_tokenize(raw)
-    word_tokens = nltk.word_tokenize(raw)
-    lemmer = nltk.stem.WordNetLemmatizer()
-
-    remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
-    flag = True
 
     chatbot_introduction()
+    flag = True
 
     while flag:
-        user_response = raw_input()
-        user_response = user_response.lower()
+        user_response = raw_input('> ').lower()
 
-        if user_response not in END_INPUTS:
-            if user_response == 'thanks' or user_response == 'thank you':
-                flag = False
-                print('> NBA Chatbot: You are welcome!')
-            else:
-                if (greeting(user_response) != None):
-                    print("> NBA Chatbot: " + greeting(user_response))
-                else:
-                    sent_tokens.append(user_response)
-                    word_tokens = word_tokens + nltk.word_tokenize(user_response)
-                    final_words = list(set(word_tokens))
-
-                    chatbot_response = response(user_response)
-
-                    '''Check if the chatbot did not understand that input'''
-                    if chatbot_response in FAIL_RESPONSES:
-                        print('[ERROR] NBA Chatbot: {}'.format(chatbot_response))
-                    else:
-                        print('> NBA Chatbot: {}'.format(chatbot_response))
-
-                    sent_tokens.remove(user_response)
-        else:
-            '''Exiting the chatbot here.'''
-            print("[EXIT] NBA Chatbot: Bye! take care..")
+        if user_response in END_INPUTS:
+            chatbot_end_response()
             break
+
+        else:
+            if any(word in user_response for word in WIKIPEDIA_QUERIES):
+                '''Query wikipedia for information about a team/player'''
+                try:
+                    print("NBA Chatbot: {}\n".format(wikipedia.summary(user_response)))
+                except:
+                    if 'whois' in user_response:
+                        '''### To-Do: Change str formatting with substring indexing later'''
+                        print("NBA Chatbot: Did you mean 'who is {}'".format(user_response))
+                    else:
+                        print("NBA Chatbot: I wasn't able to find any information on the question '{}'".format(user_response))
