@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/tflannag/Documents/Fall2018/AI-project/rasa/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/Users/tflannag/Documents/Fall2018/AI-project/rasa/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"

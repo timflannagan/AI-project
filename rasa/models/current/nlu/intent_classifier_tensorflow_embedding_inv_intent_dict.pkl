@@ -9,6 +9,6 @@ sI2
 Vgreet
 p4
 sI3
-Vrestaurant_search
+Vquery_wikipedia
 p5
 s.

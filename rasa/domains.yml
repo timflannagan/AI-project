@@ -1,0 +1,25 @@
+'''
+https://itnext.io/building-a-chatbot-with-rasa-9c3f3c6ad64d
+https://stackoverflow.com/questions/41620674/use-placeholders-in-yaml
+'''
+
+intents:
+    - greet
+    - query_wikipedia_player
+    - bye
+
+entities:
+    - player
+
+templates:
+    utter_greet:
+        - "NBA Chatbot: What can I help you with?"
+    utter_player_info:
+        - "NBA Chatbot: '{{ player_name }}' plays for Stub."
+    utter_bye:
+        - "NBA Chatbot: Good bye."
+
+actions:
+    - utter_greet
+    - utter_player_info
+    - utter_bye

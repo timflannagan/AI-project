@@ -10,7 +10,7 @@ import json
 
 def main():
     interpreter = Interpreter.load("./models/current/nlu")
-    message = "let's see some italian restaurants"
+    message = "who is kyrie irving?"
 
     result = interpreter.parse(message)
 
