@@ -1,14 +1,28 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+
+import argparse
+import warnings
+
 from rasa_nlu.training_data import load_data
-from rasa_nlu.config import RasaNLUModelConfig
-from rasa_nlu.model import Trainer
 from rasa_nlu import config
-from rasa_nlu.model import Metadata, Interpreter
-import json
+from rasa_nlu.model import Trainer
 
-def train (data, config_file, model_dir):
-    training_data = load_data(data)
-    trainer = Trainer(config.load(config_file))
-    trainer.train(training_data)
-    model_directory = trainer.persist(model_dir, fixed_model_name = 'chat')
+# from rasa_core import utils
+# from rasa_core.agent import Agent
+# from rasa_core.policies.keras_policy import KerasPolicy
+# from rasa_core.policies.memoization import MemoizationPolicy
 
-train('../rasa/nlu.md', '../rasa/nlu_config.yml', '../rasa/models/nlu')
+def train():
+    data_location = load_data('./rasa/nlu.md')
+    trainer = Trainer(config.load('./rasa/nlu_config.yml'))
+
+    trainer.train(data_location)
+    model_directory = trainer.persist('./rasa/data/models/current/', fixed_model_name="current")
+
+    return model_directory
+
+if __name__ == '__main__':
+    train()
