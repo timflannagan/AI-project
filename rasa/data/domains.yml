@@ -1,0 +1,52 @@
+actions:
+- utter_greet
+- utter_east_standings
+- utter_league_leaders
+- utter_west_standings
+- utter_query_wikipedia
+- utter_player_info
+- utter_bye
+- action_get_wikpedia_info
+entities:
+- date
+- player
+- stat
+- west_conf
+- east_conf
+intents:
+- get_player_stats
+- goodbye
+- get_west_conf
+- affirm
+- get_east_conf
+- get_league_leaders
+- query_wikipedia_player
+- greet
+slots:
+  date:
+    type: text
+  east_conf:
+    type: text
+  player:
+    type: text
+  stat:
+    type: text
+  west_conf:
+    type: text
+templates:
+  utter_bye:
+  - text: Bye.
+  - text: Good bye.
+  - text: Goodbye.
+  utter_east_standings:
+  - text: East standing stub
+  utter_greet:
+  - text: What can I help you with?
+  utter_league_leaders:
+  - text: Getting league leader info stub.
+  utter_player_info:
+  - text: Getting player info stub.
+  utter_query_wikipedia:
+  - text: 'NBA Chatbot: {player}!'
+  utter_west_standings:
+  - text: West standings stub

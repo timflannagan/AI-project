@@ -1,0 +1,61 @@
+# '''
+# https://itnext.io/building-a-chatbot-with-rasa-9c3f3c6ad64d
+# https://stackoverflow.com/questions/41620674/use-placeholders-in-yaml
+# '''
+
+intents:
+    - greet
+    - goodbye
+    - affirm
+    - query_wikipedia_player
+    - get_player_stats
+    - get_league_leaders
+    - get_east_conf
+    - get_west_conf
+
+entities:
+    - player
+    - east_conf
+    - west_conf
+    - stat
+    - date
+
+slots:
+    player:
+        type: text
+    east_conf:
+        type: text
+    west_conf:
+        type: text
+    stat:
+        type: text
+    date:
+        type: text
+
+templates:
+    utter_greet:
+        - text: "What can I help you with?"
+    utter_query_wikipedia:
+        - text: "NBA Chatbot: {player}!"
+    utter_east_standings:
+        - text: "East standing stub"
+    utter_west_standings:
+        - text: "West standings stub"
+    utter_player_info:
+        - text: "Getting player info stub."
+    utter_league_leaders:
+        - text: "Getting league leader info stub."
+    utter_bye:
+        - text: "Bye."
+        - text: "Good bye."
+        - text: "Goodbye."
+
+actions:
+    - utter_greet
+    - utter_player_info
+    - utter_bye
+    - utter_east_standings
+    - utter_west_standings
+    - utter_query_wikipedia
+    - utter_league_leaders
+    - action_get_wikpedia_info
