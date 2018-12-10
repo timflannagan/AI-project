@@ -14,26 +14,41 @@ intents:
     - get_west_conf
 
 entities:
-    - team
-    - conference
     - player
-    - leaders
+    - east_conf
+    - west_conf
+    - stat
+    - date
+
+slots:
+    player:
+        type: text
+    east_conf:
+        type: text
+    west_conf:
+        type: text
+    stat:
+        type: text
+    date:
+        type: text
 
 templates:
     utter_greet:
-        - What can I help you with?
+        - text: "What can I help you with?"
     utter_query_wikipedia:
-        - {player}
+        - text: "NBA Chatbot: {player}!"
     utter_east_standings:
-        - {team}
+        - text: "East standing stub"
     utter_west_standings:
-        - {team}
+        - text: "West standings stub"
     utter_player_info:
-        - {player}
+        - text: "Getting player info stub."
+    utter_league_leaders:
+        - text: "Getting league leader info stub."
     utter_bye:
-        - Bye.
-        - Good bye.
-        - Goodbye.
+        - text: "Bye."
+        - text: "Good bye."
+        - text: "Goodbye."
 
 actions:
     - utter_greet
@@ -42,4 +57,5 @@ actions:
     - utter_east_standings
     - utter_west_standings
     - utter_query_wikipedia
-    # - actions.ActionGetWikipediaPlayerInfo
+    - utter_league_leaders
+    - action_get_wikpedia_info
