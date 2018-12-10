@@ -36,6 +36,11 @@
 - who is [Terry Rozier](player)?
 - who is [Daniel Theis](player)?
 
+## intent:get_league_leaders
+- who leads the league in [points per game](stat)?
+- who is the league leader for [ppg](stat)?
+- which player averages the most [points per game](stat)?
+
 ## intent:get_player_stats
 - how many points per game does [James Harden](player) average this year
 - how many points per game does [James Harden](player) average in [2016](date)

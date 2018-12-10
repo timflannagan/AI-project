@@ -1,25 +1,45 @@
-'''
-https://itnext.io/building-a-chatbot-with-rasa-9c3f3c6ad64d
-https://stackoverflow.com/questions/41620674/use-placeholders-in-yaml
-'''
+# '''
+# https://itnext.io/building-a-chatbot-with-rasa-9c3f3c6ad64d
+# https://stackoverflow.com/questions/41620674/use-placeholders-in-yaml
+# '''
 
 intents:
     - greet
+    - goodbye
+    - affirm
     - query_wikipedia_player
-    - bye
+    - get_player_stats
+    - get_league_leaders
+    - get_east_conf
+    - get_west_conf
 
 entities:
+    - team
+    - conference
     - player
+    - leaders
 
 templates:
     utter_greet:
-        - "NBA Chatbot: What can I help you with?"
+        - What can I help you with?
+    utter_query_wikipedia:
+        - {player}
+    utter_east_standings:
+        - {team}
+    utter_west_standings:
+        - {team}
     utter_player_info:
-        - "NBA Chatbot: '{{ player_name }}' plays for Stub."
+        - {player}
     utter_bye:
-        - "NBA Chatbot: Good bye."
+        - Bye.
+        - Good bye.
+        - Goodbye.
 
 actions:
     - utter_greet
     - utter_player_info
     - utter_bye
+    - utter_east_standings
+    - utter_west_standings
+    - utter_query_wikipedia
+    # - actions.ActionGetWikipediaPlayerInfo
