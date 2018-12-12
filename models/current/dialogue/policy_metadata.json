@@ -6,24 +6,22 @@
   "python": "2.7.15", 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
   "rasa_core": "0.12.3", 
-  "trained_at": "20181212-011046", 
+  "trained_at": "20181212-103037", 
   "policy_names": [
     "rasa_core.policies.keras_policy.KerasPolicy", 
     "rasa_core.policies.memoization.MemoizationPolicy"
   ], 
   "action_fingerprints": {
-    "utter_greet": {
-      "slots": []
-    }, 
     "action_listen": {
-      "slots": [
-        "name"
-      ]
+      "slots": []
     }, 
     "utter_goodbye": {
       "slots": []
     }, 
-    "utter_name": {
+    "action_get_league_leaders": {
+      "slots": []
+    }, 
+    "action_get_west_standings": {
       "slots": []
     }, 
     "action_query_wikipedia": {

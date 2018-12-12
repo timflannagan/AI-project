@@ -110,6 +110,278 @@
         "text": "who is Kyrie Irving"
       }, 
       {
+        "entities": [
+          {
+            "start": 7, 
+            "end": 18, 
+            "value": "Paul George", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is Paul George"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 7, 
+            "end": 16, 
+            "value": "John Wall", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is John Wall"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 7, 
+            "end": 19, 
+            "value": "Jimmy Butler", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is Jimmy Butler"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 7, 
+            "end": 28, 
+            "value": "Giannis Antetokounmpo", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is Giannis Antetokounmpo"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 10, 
+            "value": "Seth Curry", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Seth Curry?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 11, 
+            "value": "Jake Layman", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Jake Layman?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 15, 
+            "value": "Al-Farouq Aminu", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Al-Farouq Aminu?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 12, 
+            "value": "Jusuf Nurkic", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Jusuf Nurkic?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 10, 
+            "value": "Al Horford", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Al Horford?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 11, 
+            "value": "Zach Lavine", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Zach Lavine?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 12, 
+            "value": "Bobby Portis", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Bobby Portis?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 15, 
+            "value": "Lauri Markkanen", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Lauri Markkanen?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 11, 
+            "value": "Brook Lopez", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Brook Lopez?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 14, 
+            "value": "Justin Holiday", 
+            "entity": "player"
+          }
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "Justin Holiday?"
+      }, 
+      {
+        "text": "send me the league leaders", 
+        "intent": "query_league_leaders"
+      }, 
+      {
+        "text": "who are the league leaders", 
+        "intent": "query_league_leaders"
+      }, 
+      {
+        "text": "who leads the league in stats", 
+        "intent": "query_league_leaders"
+      }, 
+      {
+        "text": "who are some of the league leaders", 
+        "intent": "query_league_leaders"
+      }, 
+      {
+        "text": "tell me about some of the league leaders", 
+        "intent": "query_league_leaders"
+      }, 
+      {
+        "text": "league leaders", 
+        "intent": "query_league_leaders"
+      }, 
+      {
+        "text": "send me the eastern conference standings", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "what are the eastern conference standings", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "whats the standings in the east", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "what are the standings in the east", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "what are the standings in the eastern conference", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "east standings", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "eastern conference standings", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "east conference standings", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "east conference", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "eastern conference", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "send me the western conference standings", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "what are the western conference standings", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "whats the standings in the west", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "what are the standings in the west", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "what are the standings in the western conference", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "west standings", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "western conference standings", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "west conference standings", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "west conference", 
+        "intent": "query_west_standings"
+      }, 
+      {
+        "text": "western conference", 
+        "intent": "query_west_standings"
+      }, 
+      {
         "text": "Hi", 
         "intent": "greet"
       }, 
@@ -252,206 +524,6 @@
       {
         "text": "definitely", 
         "intent": "affirm"
-      }, 
-      {
-        "text": "send me the eastern conference standings", 
-        "intent": "query_east_standings"
-      }, 
-      {
-        "text": "what are the eastern conference standings", 
-        "intent": "query_east_standings"
-      }, 
-      {
-        "text": "whats the standings in the east", 
-        "intent": "query_east_standings"
-      }, 
-      {
-        "text": "what are the standings in the east", 
-        "intent": "query_east_standings"
-      }, 
-      {
-        "text": "what are the standings in the eastern conference", 
-        "intent": "query_east_standings"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 11, 
-            "end": 16, 
-            "value": "Juste", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "My name is Juste"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 9, 
-            "value": "Josh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Josh"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 8, 
-            "value": "Lucy", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I'm Lucy"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 15, 
-            "end": 19, 
-            "value": "Greg", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "People call me Greg"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 10, 
-            "value": "David", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "It's David"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 23, 
-            "end": 26, 
-            "value": "Amy", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Usually people call me Amy"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 11, 
-            "end": 15, 
-            "value": "John", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "My name is John"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 16, 
-            "end": 19, 
-            "value": "Sam", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "You can call me Sam"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 15, 
-            "end": 20, 
-            "value": "Linda", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Please call me Linda"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 13, 
-            "end": 16, 
-            "value": "Tom", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Name name is Tom"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 12, 
-            "value": "Richard", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Richard"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 9, 
-            "value": "Tracy", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I'm Tracy"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 8, 
-            "end": 13, 
-            "value": "Sally", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Call me Sally"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 12, 
-            "value": "Philipp", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Philipp"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 12, 
-            "value": "Charlie", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Charlie"
       }
     ], 
     "entity_synonyms": [], 

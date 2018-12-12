@@ -1,7 +1,5 @@
-<!--- Make sure to update this training data file with more training examples from https://forum.rasa.com/t/rasa-starter-pack/704 -->
-
-## intent:goodbye <!--- The label of the intent -->
-- Bye 			<!--- Training examples for intent 'bye'-->
+## intent:goodbye
+- Bye 			
 - Goodbye
 - See you later
 - Bye bot
@@ -22,6 +20,52 @@
 - who is [Lebron James](player)
 - who is [Steph Curry](player)
 - who is [Kyrie Irving](player)
+- who is [Paul George](player)
+- who is [John Wall](player)
+- who is [Jimmy Butler](player)
+- who is [Giannis Antetokounmpo](player)
+- [Seth Curry](player)?
+- [Jake Layman](player)?
+- [Al-Farouq Aminu](player)?
+- [Jusuf Nurkic](player)?
+- [Al Horford](player)?
+- [Zach Lavine](player)?
+- [Bobby Portis](player)?
+- [Lauri Markkanen](player)?
+- [Brook Lopez](player)?
+- [Justin Holiday](player)?
+
+## intent:query_league_leaders
+- send me the league leaders
+- who are the league leaders
+- who leads the league in stats
+- who are some of the league leaders
+- tell me about some of the league leaders
+- league leaders
+
+## intent:query_east_standings
+- send me the eastern conference standings
+- what are the eastern conference standings
+- whats the standings in the east
+- what are the standings in the east
+- what are the standings in the eastern conference
+- east standings
+- eastern conference standings
+- east conference standings
+- east conference
+- eastern conference
+
+## intent:query_west_standings
+- send me the western conference standings
+- what are the western conference standings
+- whats the standings in the west
+- what are the standings in the west
+- what are the standings in the western conference
+- west standings
+- western conference standings
+- west conference standings
+- west conference
+- western conference
 
 ## intent:greet
 - Hi
@@ -64,27 +108,3 @@
 - for sure
 - yes yes yes
 - definitely
-
-## intent:query_east_standings
-- send me the eastern conference standings
-- what are the eastern conference standings
-- whats the standings in the east
-- what are the standings in the east
-- what are the standings in the eastern conference
-
-## intent:name
-- My name is [Juste](name)  <!--- Square brackets contain the value of entity while the text in parentheses is a a label of the entity -->
-- I am [Josh](name)
-- I'm [Lucy](name)
-- People call me [Greg](name)
-- It's [David](name)
-- Usually people call me [Amy](name)
-- My name is [John](name)
-- You can call me [Sam](name)
-- Please call me [Linda](name)
-- Name name is [Tom](name)
-- I am [Richard](name)
-- I'm [Tracy](name)
-- Call me [Sally](name)
-- I am [Philipp](name)
-- I am [Charlie](name)

@@ -60,7 +60,7 @@ class ActionGetWestStandings(Action):
 
         return []
 
-class ActionGetLeagueLeaders(Actions):
+class ActionGetLeagueLeaders(Action):
     def name(self):
         return "action_get_league_leaders"
 

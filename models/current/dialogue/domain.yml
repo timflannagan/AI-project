@@ -1,31 +1,33 @@
 actions:
-- utter_name
 - utter_thanks
 - utter_greet
 - utter_goodbye
 - action_query_wikipedia
 - action_get_east_standings
+- action_get_west_standings
+- action_get_league_leaders
 config:
   store_entities_as_slots: true
 entities:
-- name
 - player
 - east_conf
 forms: []
 intents:
 - deny:
     use_entities: true
-- name:
+- thanks:
     use_entities: true
 - goodbye:
+    use_entities: true
+- query_league_leaders:
+    use_entities: true
+- query_west_standings:
     use_entities: true
 - query_wikipedia:
     use_entities: true
 - query_east_standings:
     use_entities: true
 - greet:
-    use_entities: true
-- thanks:
     use_entities: true
 slots:
   name:
