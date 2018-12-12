@@ -1,0 +1,49 @@
+entities:
+- player
+- stat
+- west_conf
+- east_conf
+
+intents:
+- affirm
+- goodbye
+- greet
+- query_player_stats
+- query_west_conf
+- query_east_conf
+- query_league_leaders
+- query_wikipedia_player
+
+slots:
+  date:
+    type: text
+  east_conf:
+    type: text
+  player:
+    type: text
+  stat:
+    type: text
+  west_conf:
+    type: text
+
+templates:
+  utter_bye:
+  - text: Bye.
+  - text: Good bye.
+  - text: Goodbye.
+
+  utter_greet:
+  - text: What can I help you with?
+
+actions:
+- utter_greet
+- utter_east_standings
+- utter_league_leaders
+- utter_west_standings
+- utter_query_wikipedia
+- utter_player_info
+- utter_bye
+- action_get_wikpedia_info
+- action_get_player_stats
+- action_get_east_conf_standings
+- action_get_west_conf_standings
