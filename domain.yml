@@ -11,6 +11,8 @@ intents:
 entities:
 - player
 - east_conf
+- west_conf
+- team
 
 slots:
   name:
@@ -28,9 +30,6 @@ actions:
 - action_get_league_leaders
 
 templates:
-  utter_name:
-  - text: "Hey there! Tell me your name."
-
   utter_greet:
   - text: "Nice to you meet you {name}. How can I help?"
 
