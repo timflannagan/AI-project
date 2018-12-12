@@ -1,25 +1,36 @@
 {
   "max_histories": [
-    5, 
-    null, 
-    5, 
-    2
+    3, 
+    3
   ], 
   "python": "2.7.15", 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
   "rasa_core": "0.12.3", 
-  "trained_at": "20181210-154244", 
+  "trained_at": "20181212-103037", 
   "policy_names": [
     "rasa_core.policies.keras_policy.KerasPolicy", 
-    "rasa_core.policies.fallback.FallbackPolicy", 
-    "rasa_core.policies.memoization.MemoizationPolicy", 
-    "rasa_core.policies.form_policy.FormPolicy"
+    "rasa_core.policies.memoization.MemoizationPolicy"
   ], 
   "action_fingerprints": {
-    "utter_bye": {
+    "action_listen": {
       "slots": []
     }, 
-    "action_listen": {
+    "utter_goodbye": {
+      "slots": []
+    }, 
+    "action_get_league_leaders": {
+      "slots": []
+    }, 
+    "action_get_west_standings": {
+      "slots": []
+    }, 
+    "action_query_wikipedia": {
+      "slots": []
+    }, 
+    "action_get_east_standings": {
+      "slots": []
+    }, 
+    "utter_thanks": {
       "slots": []
     }
   }

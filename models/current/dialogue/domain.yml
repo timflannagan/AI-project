@@ -1,44 +1,36 @@
 actions:
+- utter_thanks
 - utter_greet
-- utter_player_info
-- utter_bye
-- utter_east_standings
-- utter_west_standings
-- utter_query_wikipedia
-- utter_league_leaders
-- action_get_wikpedia_info
+- utter_goodbye
+- action_query_wikipedia
+- action_get_east_standings
+- action_get_west_standings
+- action_get_league_leaders
 config:
   store_entities_as_slots: true
 entities:
 - player
 - east_conf
-- west_conf
-- stat
-- date
 forms: []
 intents:
-- get_player_stats:
+- deny:
     use_entities: true
-- get_west_conf:
+- thanks:
     use_entities: true
 - goodbye:
     use_entities: true
-- affirm:
+- query_league_leaders:
     use_entities: true
-- get_east_conf:
+- query_west_standings:
     use_entities: true
-- get_league_leaders:
+- query_wikipedia:
     use_entities: true
-- query_wikipedia_player:
+- query_east_standings:
     use_entities: true
 - greet:
     use_entities: true
 slots:
-  date:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.TextSlot
-  east_conf:
+  name:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -46,28 +38,12 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
-  stat:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.TextSlot
-  west_conf:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.TextSlot
 templates:
-  utter_bye:
-  - text: Bye.
-  - text: Good bye.
-  - text: Goodbye.
-  utter_east_standings:
-  - text: East standing stub
+  utter_goodbye:
+  - text: Talk to you later!
   utter_greet:
-  - text: What can I help you with?
-  utter_league_leaders:
-  - text: Getting league leader info stub.
-  utter_player_info:
-  - text: Getting player info stub.
-  utter_query_wikipedia:
-  - text: 'NBA Chatbot: {player}!'
-  utter_west_standings:
-  - text: West standings stub
+  - text: Nice to you meet you {name}. How can I help?
+  utter_name:
+  - text: Hey there! Tell me your name.
+  utter_thanks:
+  - text: My pleasure.
