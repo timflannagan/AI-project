@@ -2,307 +2,460 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "text": "yes",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "Bye", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "yep",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "Goodbye", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "yeah",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "See you later", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "indeed",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "Bye bot", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "that's right",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "Goodbye friend", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "ok",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "bye", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "great",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "bye for now", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "right, thank you",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "catch you later", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "correct",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "gotta go", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "great choice",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "See you", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "sounds really good",
-        "intent": "affirm",
-        "entities": []
-      },
+        "text": "goodnight", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "bye",
-        "intent": "goodbye",
-        "entities": []
-      },
+        "text": "have a nice day", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "goodbye",
-        "intent": "goodbye",
-        "entities": []
-      },
+        "text": "i'm off", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "good bye",
-        "intent": "goodbye",
-        "entities": []
-      },
+        "text": "see you later alligator", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "stop",
-        "intent": "goodbye",
-        "entities": []
-      },
+        "text": "we'll speak soon", 
+        "intent": "goodbye"
+      }, 
       {
-        "text": "end",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
-        "text": "farewell",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
-        "text": "Bye bye",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
-        "text": "have a good one",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
-        "text": "hey",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "howdy",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "hey there",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "hello",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "hi",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "good morning",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "good evening",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "dear sir",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "who is Kyrie Irving?",
-        "intent": "query_wikipedia_player",
         "entities": [
           {
-            "start": 7,
-            "end": 19,
-            "value": "Kyrie Irving",
+            "start": 7, 
+            "end": 19, 
+            "value": "James Harden", 
             "entity": "player"
           }
-        ]
-      },
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is James Harden"
+      }, 
       {
-        "text": "who is Terry Rozier?",
-        "intent": "query_wikipedia_player",
         "entities": [
           {
-            "start": 7,
-            "end": 19,
-            "value": "Terry Rozier",
+            "start": 7, 
+            "end": 19, 
+            "value": "Lebron James", 
             "entity": "player"
           }
-        ]
-      },
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is Lebron James"
+      }, 
       {
-        "text": "who is Daniel Theis?",
-        "intent": "query_wikipedia_player",
         "entities": [
           {
-            "start": 7,
-            "end": 19,
-            "value": "Daniel Theis",
+            "start": 7, 
+            "end": 18, 
+            "value": "Steph Curry", 
             "entity": "player"
           }
-        ]
-      },
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is Steph Curry"
+      }, 
       {
-        "text": "how many points per game does James Harden average this year",
-        "intent": "get_player_stats",
         "entities": [
           {
-            "start": 30,
-            "end": 42,
-            "value": "James Harden",
+            "start": 7, 
+            "end": 19, 
+            "value": "Kyrie Irving", 
             "entity": "player"
           }
-        ]
-      },
+        ], 
+        "intent": "query_wikipedia", 
+        "text": "who is Kyrie Irving"
+      }, 
       {
-        "text": "how many points per game does James Harden average in 2016",
-        "intent": "get_player_stats",
+        "text": "Hi", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hey", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hi bot", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hey bot", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hello", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Good morning", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi again", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi folks", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi Mister", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi pal!", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi there", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "greetings", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hello everybody", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hello is anybody there", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hello robot", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Thanks", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thank you", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thank you so much", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thanks bot", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thanks for that", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cheers", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cheers bro", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "ok thanks!", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "perfect thank you", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "thanks a bunch for everything", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "thanks for the help", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "thanks a lot", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "amazing, thanks", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cool, thanks", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cool thank you", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "yes", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "yes sure", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "absolutely", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "for sure", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "yes yes yes", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "definitely", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "send me the eastern conference standings", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "what are the eastern conference standings", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "whats the standings in the east", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "what are the standings in the east", 
+        "intent": "query_east_standings"
+      }, 
+      {
+        "text": "what are the standings in the eastern conference", 
+        "intent": "query_east_standings"
+      }, 
+      {
         "entities": [
           {
-            "start": 30,
-            "end": 42,
-            "value": "James Harden",
-            "entity": "player"
-          },
-          {
-            "start": 54,
-            "end": 58,
-            "value": "2016",
-            "entity": "date"
+            "start": 11, 
+            "end": 16, 
+            "value": "Juste", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "My name is Juste"
+      }, 
       {
-        "text": "how many assists per game does James Harden average this year",
-        "intent": "get_player_stats",
         "entities": [
           {
-            "start": 31,
-            "end": 43,
-            "value": "James Harden",
-            "entity": "player"
+            "start": 5, 
+            "end": 9, 
+            "value": "Josh", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "I am Josh"
+      }, 
       {
-        "text": "send me the eastern conference standings",
-        "intent": "get_east_conf",
         "entities": [
           {
-            "start": 12,
-            "end": 30,
-            "value": "eastern conference",
-            "entity": "east_conf"
+            "start": 4, 
+            "end": 8, 
+            "value": "Lucy", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "I'm Lucy"
+      }, 
       {
-        "text": "what are the eastern conference standings",
-        "intent": "get_east_conf",
         "entities": [
           {
-            "start": 13,
-            "end": 31,
-            "value": "eastern conference",
-            "entity": "east_conf"
+            "start": 15, 
+            "end": 19, 
+            "value": "Greg", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "People call me Greg"
+      }, 
       {
-        "text": "what are the standings in the east",
-        "intent": "get_east_conf",
         "entities": [
           {
-            "start": 13,
-            "end": 22,
-            "value": "standings",
-            "entity": "east_conf"
+            "start": 5, 
+            "end": 10, 
+            "value": "David", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "It's David"
+      }, 
       {
-        "text": "send me the western conference standings",
-        "intent": "get_west_conf",
         "entities": [
           {
-            "start": 12,
-            "end": 30,
-            "value": "western conference",
-            "entity": "west_conf"
+            "start": 23, 
+            "end": 26, 
+            "value": "Amy", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "Usually people call me Amy"
+      }, 
       {
-        "text": "what are the western conference standings",
-        "intent": "get_west_conf",
         "entities": [
           {
-            "start": 13,
-            "end": 31,
-            "value": "western conference",
-            "entity": "west_conf"
+            "start": 11, 
+            "end": 15, 
+            "value": "John", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "My name is John"
+      }, 
       {
-        "text": "what are the standings in the west",
-        "intent": "get_west_conf",
         "entities": [
           {
-            "start": 13,
-            "end": 22,
-            "value": "standings",
-            "entity": "west_conf"
+            "start": 16, 
+            "end": 19, 
+            "value": "Sam", 
+            "entity": "name"
           }
-        ]
-      },
+        ], 
+        "intent": "name", 
+        "text": "You can call me Sam"
+      }, 
       {
-        "text": "who is Karl Malone",
-        "intent": "query_wikipedia_player",
-        "entities": []
+        "entities": [
+          {
+            "start": 15, 
+            "end": 20, 
+            "value": "Linda", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "name", 
+        "text": "Please call me Linda"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 13, 
+            "end": 16, 
+            "value": "Tom", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "name", 
+        "text": "Name name is Tom"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 12, 
+            "value": "Richard", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "name", 
+        "text": "I am Richard"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 9, 
+            "value": "Tracy", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "name", 
+        "text": "I'm Tracy"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 8, 
+            "end": 13, 
+            "value": "Sally", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "name", 
+        "text": "Call me Sally"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 12, 
+            "value": "Philipp", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "name", 
+        "text": "I am Philipp"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 12, 
+            "value": "Charlie", 
+            "entity": "name"
+          }
+        ], 
+        "intent": "name", 
+        "text": "I am Charlie"
       }
-    ],
-    "entity_synonyms": [],
-    "regex_features": [
-      {
-        "pattern": "hey[^\\s]*",
-        "name": "greet"
-      },
-      {
-        "pattern": "[0-9]{5}",
-        "name": "zipcode"
-      }
-    ],
+    ], 
+    "entity_synonyms": [], 
+    "regex_features": [], 
     "lookup_tables": []
   }
 }
