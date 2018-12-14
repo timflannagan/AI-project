@@ -77,3 +77,14 @@ class ActionGetTeamNextGame(Action):
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message('getting a team\'s next game is current a stub.')
         return []
+
+class ActionGetTeamCoach(Action):
+    def name(self):
+        return "action_get_teams_coach"
+
+    def run(self, dispatcher, tracker, domain):
+        last_message = tracker.current_state()['latest_message']['text']
+
+        dispatcher.utter_message(last_message)
+
+        return []

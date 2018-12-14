@@ -458,6 +458,246 @@
         "intent": "query_league_leaders"
       }, 
       {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 31, 
+            "value": "Celtics", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the Celtics?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 29, 
+            "value": "Bucks", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the Bucks?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 29, 
+            "value": "76ers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the 76ers?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 31, 
+            "value": "Rockets", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the Rockets?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 32, 
+            "value": "Warriors", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the Warriors?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 33, 
+            "value": "Cavaliers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the Cavaliers?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 29, 
+            "value": "Hawks", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the Hawks?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 24, 
+            "end": 29, 
+            "value": "Magic", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the coach of the Magic?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 18, 
+            "value": "Celtics", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the Celtics coach?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 15, 
+            "value": "Suns", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the Suns coach?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 16, 
+            "value": "Bucks", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the Bucks coach?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 23, 
+            "value": "Trailblazers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the Trailblazers coach?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 19, 
+            "value": "Warriors", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the Warriors coach?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 16, 
+            "value": "Kings", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the Kings coach?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 18, 
+            "value": "Hornets", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the Hornets coach?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 36, 
+            "value": "Celtics", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the head coach of the Celtics?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 34, 
+            "value": "Bucks", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the head coach of the Bucks?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 34, 
+            "value": "76ers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the head coach of the 76ers?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 34, 
+            "value": "Magic", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the head coach of the Magic?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 35, 
+            "value": "Pacers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "get_team_head_coach", 
+        "text": "who is the head coach of the Pacers?"
+      }, 
+      {
         "text": "send me the eastern conference standings", 
         "intent": "query_east_standings"
       }, 

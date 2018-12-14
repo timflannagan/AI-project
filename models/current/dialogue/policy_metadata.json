@@ -1,23 +1,21 @@
 {
   "max_histories": [
-    5, 
-    null, 
-    5, 
-    2
+    3, 
+    3
   ], 
   "python": "2.7.5", 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
   "rasa_core": "0.12.3", 
-  "trained_at": "20181214-105630", 
+  "trained_at": "20181214-130821", 
   "policy_names": [
     "rasa_core.policies.keras_policy.KerasPolicy", 
-    "rasa_core.policies.fallback.FallbackPolicy", 
-    "rasa_core.policies.memoization.MemoizationPolicy", 
-    "rasa_core.policies.form_policy.FormPolicy"
+    "rasa_core.policies.memoization.MemoizationPolicy"
   ], 
   "action_fingerprints": {
     "action_listen": {
-      "slots": []
+      "slots": [
+        "player"
+      ]
     }, 
     "utter_goodbye": {
       "slots": []
@@ -38,6 +36,9 @@
       "slots": []
     }, 
     "utter_thanks": {
+      "slots": []
+    }, 
+    "action_get_teams_coach": {
       "slots": []
     }
   }

@@ -6,6 +6,7 @@ actions:
 - action_get_west_standings
 - action_query_wikipedia
 - action_get_east_standings
+- action_get_teams_coach
 - utter_thanks
 entities:
 - player
@@ -15,6 +16,7 @@ entities:
 - team
 intents:
 - query_team_next_game
+- query_teams_coach
 - deny
 - thanks
 - goodbye

@@ -22,6 +22,10 @@
 * query_league_leaders
  - action_get_league_leaders
 
+## story_get_teams_coach
+* query_teams_coach
+ - action_get_teams_coach
+
 ## story_get_team_next_game
 * query_team_next_game:
  - action_get_team_next_game
@@ -38,4 +42,3 @@
     - utter_goodbye
     - action_default_fallback
     - rewind
-
