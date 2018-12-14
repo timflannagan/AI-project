@@ -6,6 +6,7 @@ actions:
 - action_get_east_standings
 - action_get_west_standings
 - action_get_league_leaders
+- action_get_team_next_game
 config:
   store_entities_as_slots: true
 entities:
@@ -15,6 +16,8 @@ entities:
 - team
 forms: []
 intents:
+- query_team_next_game:
+    use_entities: true
 - deny:
     use_entities: true
 - thanks:

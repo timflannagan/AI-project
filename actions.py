@@ -9,7 +9,9 @@ import json
 import wikipedia
 import nba_py
 import timeit
+import nba_api
 
+from rasa_core_sdk.events import UserUtteranceReverted
 from rasa_core_sdk import Action
 
 logger = logging.getLogger(__name__)
@@ -33,13 +35,13 @@ class ActionGetEastStandings(Action):
         return "action_get_east_standings"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message('Sending out a GET request to get the scoreboard for today\`s date. This while take a while.')
+        from nba_api.stats.endpoints import leaguestandings
 
         try:
-            scoreboard = nba_py.Scoreboard(month=12, day=12, year=2018, league_id='00', offset=0)
-            ### To-Do: timeout constructor when time MAX_TIME is reached
-        except:
-            dispatcher.utter_message('Request took too long to complete. Passing an exception!')
+            league_standings = leaguestandings.LeagueStandings().get_normalized_json()
+            dispatcher.utter_message(league_standings)
+        except Exception as e:
+            dispatcher.utter_message('Request took too long to complete. Passing an exception: {}'.format(e))
             pass
 
         return []
@@ -49,13 +51,13 @@ class ActionGetWestStandings(Action):
         return "action_get_west_standings"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message('Sending out a GET request to get the scoreboard for today\`s date. This while take a while.')
+        from nba_api.stats.endpoints import leaguestandings
 
         try:
-            scoreboard = nba_py.Scoreboard(month=12, day=12, year=2018, league_id='00', offset=0)
-            ### To-Do: timeout constructor when time MAX_TIME is reached
-        except:
-            dispatcher.utter_message('Request took too long to complete. Passing an exception!')
+            league_standings = leaguestandings.LeagueStandings().standings.get_json()
+            dispatcher.utter_message(league_standings)
+        except Exception as e:
+            dispatcher.utter_message('Request took too long to complete. Passing an exception: {}'.format(e))
             pass
 
         return []
@@ -70,7 +72,7 @@ class ActionGetLeagueLeaders(Action):
 
 class ActionGetTeamNextGame(Action):
     def name(self):
-        return "action_team_next_game"
+        return "action_get_team_next_game"
 
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message('getting a team\'s next game is current a stub.')

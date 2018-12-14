@@ -5,6 +5,7 @@
     "intent_greet", 
     "intent_query_east_standings", 
     "intent_query_league_leaders", 
+    "intent_query_team_next_game", 
     "intent_query_west_standings", 
     "intent_query_wikipedia", 
     "intent_thanks", 
@@ -24,6 +25,7 @@
     "prev_action_query_wikipedia", 
     "prev_action_get_east_standings", 
     "prev_action_get_west_standings", 
-    "prev_action_get_league_leaders"
+    "prev_action_get_league_leaders", 
+    "prev_action_get_team_next_game"
   ]
 }
