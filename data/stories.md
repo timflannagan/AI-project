@@ -21,3 +21,7 @@
 ## story_get_league_leaders
 * query_league_leaders
  - action_get_league_leaders
+
+## story_get_team_next_game
+* query_team_next_game:
+ - action_team_next_game

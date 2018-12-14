@@ -65,5 +65,13 @@ class ActionGetLeagueLeaders(Action):
         return "action_get_league_leaders"
 
     def run(self, dispatcher, tracker, domain):
-        displatcher.utter_message('getting league leader stats is current a stub.')
+        dispatcher.utter_message('getting league leader stats is current a stub.')
+        return []
+
+class ActionGetTeamNextGame(Action):
+    def name(self):
+        return "action_team_next_game"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message('getting a team\'s next game is current a stub.')
         return []

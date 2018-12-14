@@ -11,6 +11,8 @@ config:
 entities:
 - player
 - east_conf
+- west_conf
+- team
 forms: []
 intents:
 - deny:
@@ -39,11 +41,11 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
-  utter_goodbye:
-  - text: Talk to you later!
+  utter_bye:
+  - text: Bye.
+  - text: Good bye.
+  - text: Goodbye.
   utter_greet:
-  - text: Nice to you meet you {name}. How can I help?
-  utter_name:
-  - text: Hey there! Tell me your name.
+  - text: What can I help you with?
   utter_thanks:
   - text: My pleasure.

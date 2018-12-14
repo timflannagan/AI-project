@@ -10,6 +10,8 @@
     "intent_thanks", 
     "entity_player", 
     "entity_east_conf", 
+    "entity_west_conf", 
+    "entity_team", 
     "slot_name_0", 
     "slot_player_0", 
     "prev_action_listen", 

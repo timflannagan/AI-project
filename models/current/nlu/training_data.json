@@ -278,6 +278,162 @@
         "text": "Justin Holiday?"
       }, 
       {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 19, 
+            "value": "Celtics", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when do the Celtics play next?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 19, 
+            "value": "Rockets", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when do the Rockets play next?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "Spurs", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when do the Spurs play next?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 20, 
+            "value": "Warriors", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when do the Warriors play next?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 21, 
+            "value": "Cavaliers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when do the Cavaliers play next?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 18, 
+            "value": "Knicks", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when do the Knicks play next?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "Magic", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when do the Magic play next?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "Magic", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when is the Magic next game?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 21, 
+            "value": "Cavaliers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when is the Cavaliers next game?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "Kings", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when is the Kings next game?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 18, 
+            "value": "Lakers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when is the Lakers next game?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "76ers", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when is the 76ers next game?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "Bucks", 
+            "entity": "team"
+          }
+        ], 
+        "intent": "query_team_next_game", 
+        "text": "when is the Bucks next game?"
+      }, 
+      {
         "text": "send me the league leaders", 
         "intent": "query_league_leaders"
       }, 

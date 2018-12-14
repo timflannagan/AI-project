@@ -35,6 +35,21 @@
 - [Brook Lopez](player)?
 - [Justin Holiday](player)?
 
+## intent:query_team_next_game
+- when do the [Celtics](team) play next?
+- when do the [Rockets](team) play next?
+- when do the [Spurs](team) play next?
+- when do the [Warriors](team) play next?
+- when do the [Cavaliers](team) play next?
+- when do the [Knicks](team) play next?
+- when do the [Magic](team) play next?
+- when is the [Magic](team) next game?
+- when is the [Cavaliers](team) next game?
+- when is the [Kings](team) next game?
+- when is the [Lakers](team) next game?
+- when is the [76ers](team) next game?
+- when is the [Bucks](team) next game?
+
 ## intent:query_league_leaders
 - send me the league leaders
 - who are the league leaders
