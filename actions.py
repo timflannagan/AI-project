@@ -74,8 +74,37 @@ class ActionGetTeamNextGame(Action):
     def name(self):
         return "action_get_team_next_game"
 
+    # def find_team_id(tracker):
+    #     last_message = tracker.current_state()['latest_message']['text']
+    #     team_id = ''
+    #
+    #     with open('/data/teams.json') as f:
+    #         data_read = json.load(f)
+    #
+    #     for item in data_read:
+    #         if item['teamName'] in last_message or item['location'] in last_message \
+    #             team_id = item['teamId']
+    #
+    #     return team_id
+
+    # def get_games(team_abv):
+    #     from nba_api.stats.endpoints import leaguegamefinder
+    #
+    #     team_id = find_team_id(tracker)
+    #     game_finder = leaguegamefinder.LeagueGameFinder(team_id_nullable=team_id)
+    #
+    #
+    #
+    #     return team_id
+
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message('getting a team\'s next game is current a stub.')
+        from nba_api.stats.statics import teams
+
+        # try:
+        #     get_games()
+        # except Exception as e:
+        #     dispatcher.utter_message('Failed to gather a teams games. Error: {}'.format(e))
+
         return []
 
 class ActionGetTeamCoach(Action):

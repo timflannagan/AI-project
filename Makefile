@@ -9,7 +9,7 @@ train-core:
 	python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c policies.yml
 
 run-core:
-	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --enable_api --endpoints endpoints.yml
+	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu
 
 run-nlu:
 	python -m rasa_nlu.run -m models/current/nlu
