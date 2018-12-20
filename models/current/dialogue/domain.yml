@@ -1,18 +1,25 @@
 actions:
-- utter_thanks
 - utter_greet
 - utter_goodbye
+- action_get_team_next_game
+- action_get_league_leaders
+- action_get_west_standings
 - action_query_wikipedia
 - action_get_east_standings
-- action_get_west_standings
-- action_get_league_leaders
+- action_get_teams_coach
+- utter_thanks
 config:
   store_entities_as_slots: true
 entities:
 - player
+- west_conf
 - east_conf
+- goodbye
+- team
 forms: []
 intents:
+- query_team_next_game:
+    use_entities: true
 - deny:
     use_entities: true
 - thanks:
@@ -25,9 +32,11 @@ intents:
     use_entities: true
 - query_wikipedia:
     use_entities: true
-- query_east_standings:
+- query_teams_coach:
     use_entities: true
 - greet:
+    use_entities: true
+- query_east_standings:
     use_entities: true
 slots:
   name:
@@ -39,11 +48,11 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
-  utter_goodbye:
-  - text: Talk to you later!
+  utter_bye:
+  - text: Bye.
+  - text: Good bye.
+  - text: Goodbye.
   utter_greet:
-  - text: Nice to you meet you {name}. How can I help?
-  utter_name:
-  - text: Hey there! Tell me your name.
+  - text: What can I help you with?
   utter_thanks:
   - text: My pleasure.
