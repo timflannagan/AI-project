@@ -466,7 +466,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the Celtics?"
       }, 
       {
@@ -478,7 +478,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the Bucks?"
       }, 
       {
@@ -490,7 +490,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the 76ers?"
       }, 
       {
@@ -502,7 +502,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the Rockets?"
       }, 
       {
@@ -514,7 +514,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the Warriors?"
       }, 
       {
@@ -526,7 +526,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the Cavaliers?"
       }, 
       {
@@ -538,7 +538,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the Hawks?"
       }, 
       {
@@ -550,7 +550,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the coach of the Magic?"
       }, 
       {
@@ -562,7 +562,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the Celtics coach?"
       }, 
       {
@@ -574,7 +574,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the Suns coach?"
       }, 
       {
@@ -586,7 +586,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the Bucks coach?"
       }, 
       {
@@ -598,7 +598,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the Trailblazers coach?"
       }, 
       {
@@ -610,7 +610,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the Warriors coach?"
       }, 
       {
@@ -622,7 +622,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the Kings coach?"
       }, 
       {
@@ -634,7 +634,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the Hornets coach?"
       }, 
       {
@@ -646,7 +646,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the head coach of the Celtics?"
       }, 
       {
@@ -658,7 +658,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the head coach of the Bucks?"
       }, 
       {
@@ -670,7 +670,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the head coach of the 76ers?"
       }, 
       {
@@ -682,7 +682,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the head coach of the Magic?"
       }, 
       {
@@ -694,7 +694,7 @@
             "entity": "team"
           }
         ], 
-        "intent": "get_team_head_coach", 
+        "intent": "query_team_head_coach", 
         "text": "who is the head coach of the Pacers?"
       }, 
       {

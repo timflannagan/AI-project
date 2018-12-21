@@ -23,7 +23,7 @@
  - action_get_league_leaders
 
 ## story_get_teams_coach
-* query_teams_coach
+* query_team_head_coach
  - action_get_teams_coach
 
 ## story_get_team_next_game
@@ -42,3 +42,7 @@
     - utter_goodbye
     - action_default_fallback
     - rewind
+## Generated Story 7209176501020821754
+* query_team_head_coach{"team": "celtics"}
+    - action_get_teams_coach
+

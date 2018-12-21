@@ -6,8 +6,8 @@ actions:
 - action_get_west_standings
 - action_query_wikipedia
 - action_get_east_standings
-- action_get_teams_coach
 - utter_thanks
+- action_get_teams_coach
 entities:
 - player
 - west_conf
@@ -16,7 +16,6 @@ entities:
 - team
 intents:
 - query_team_next_game
-- query_teams_coach
 - deny
 - thanks
 - goodbye
@@ -25,6 +24,7 @@ intents:
 - query_wikipedia
 - query_east_standings
 - greet
+- query_team_head_coach
 slots:
   name:
     type: text

@@ -32,11 +32,11 @@ intents:
     use_entities: true
 - query_wikipedia:
     use_entities: true
-- query_teams_coach:
+- query_east_standings:
     use_entities: true
 - greet:
     use_entities: true
-- query_east_standings:
+- query_team_head_coach:
     use_entities: true
 slots:
   name:
