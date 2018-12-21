@@ -11,8 +11,13 @@ import nba_py
 import timeit
 import nba_api
 
+import warnings
+warnings.filterwarnings("ignore")
+
 from rasa_core_sdk.events import UserUtteranceReverted
+from nba_api.stats.static import teams
 from rasa_core_sdk import Action
+from nba_api.stats.endpoints import commonteamroster
 
 logger = logging.getLogger(__name__)
 
@@ -98,7 +103,7 @@ class ActionGetTeamNextGame(Action):
     #     return team_id
 
     def run(self, dispatcher, tracker, domain):
-        from nba_api.stats.statics import teams
+        # from nba_api.stats.statics import teams
 
         # try:
         #     get_games()
@@ -107,6 +112,30 @@ class ActionGetTeamNextGame(Action):
 
         return []
 
+def get_team_id(last_message):
+    team_id = ''
+    team_name = ''
+
+    unicode_input = u'{}'.format(last_message)
+
+    with open('data/teams.json') as f:
+        data = json.load(f)
+
+        for entry in data:
+            if entry['teamName'] in unicode_input:
+                team_id = json.dumps(entry['teamId'])
+            elif entry['teamName'] in unicode_input:
+                team_id = json.dumps(entry['teamId'])
+            elif entry['location'] in unicode_input:
+                team_id = json.dumps(entry['teamId'])
+            elif entry['simpleName'] in unicode_input:
+                team_id = json.dumps(entry['teamId'])
+
+    if team_id != '':
+        team_name = json.dumps(teams.find_team_name_by_id(team_id)['nickname'])
+
+    return team_id, team_name
+
 class ActionGetTeamCoach(Action):
     def name(self):
         return "action_get_teams_coach"
@@ -114,6 +143,17 @@ class ActionGetTeamCoach(Action):
     def run(self, dispatcher, tracker, domain):
         last_message = tracker.current_state()['latest_message']['text']
 
-        dispatcher.utter_message(last_message)
+        try:
+            team_id, team_name = get_team_id(last_message)
+        except Exception as e:
+            print('Failed to get team information from your input. Error: {}'.format(e))
+
+        try:
+            team_roster = commonteamroster.CommonTeamRoster(team_id=team_id).coaches.get_dict()
+            team_name = team_name.replace('"', '')
+
+            dispatcher.utter_message('The coach of the {} is {}'.format(team_name, json.dumps(team_roster['data'][0][5], indent = 4)))
+        except Exception as e:
+            print('Failed to get roster information with the processed team id. E: {}'.format(e))
 
         return []
